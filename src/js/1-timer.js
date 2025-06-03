@@ -35,7 +35,7 @@ flatpickr(input, {
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
-  onChange(selectedDates) {
+  onClose(selectedDates) {
     const date = selectedDates[0];
     if (date <= new Date()) {
       iziToast.warning({
